@@ -1,0 +1,34 @@
+{
+  "palettes": [
+    {
+      "name": "DeepSea_Biolume",
+      "colors": ["#00050a", "#002b36", "#2aa198", "#00ff88"],
+      "fog_color": "#000d1a",
+      "glow_intensity": 1.5
+    },
+    {
+      "name": "Neon_Cyberpunk",
+      "colors": ["#1a0033", "#ff00ff", "#00ffff", "#ffffff"],
+      "fog_color": "#0d001a",
+      "glow_intensity": 2.0
+    },
+    {
+      "name": "Desert_Obsidian",
+      "colors": ["#221100", "#ff6600", "#442200", "#111111"],
+      "fog_color": "#110800",
+      "glow_intensity": 0.3
+    },
+    {
+      "name": "Arctic_Aurora",
+      "colors": ["#000d1a", "#003322", "#00ff88", "#aaddff"],
+      "fog_color": "#000a14",
+      "glow_intensity": 1.8
+    },
+    {
+      "name": "Blood_Magma",
+      "colors": ["#0a0000", "#330000", "#ff1100", "#ff8844"],
+      "fog_color": "#0a0000",
+      "glow_intensity": 0.9
+    }
+  ]
+}
