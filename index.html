@@ -3,17 +3,54 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>raymarching</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
+    <title>Ray Marching — Vibe SDF Engine</title>
+    <!-- p5.js core (WebGL renderer).
+         For production use, add SRI integrity hashes — copy them from:
+         https://cdnjs.com/libraries/p5.js/1.9.0 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"
+            crossorigin="anonymous"></script>
+    <!-- p5.sound (optional — enables AudioBridge) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/addons/p5.sound.min.js"
+            crossorigin="anonymous"></script>
     <style>
-      html, body { margin: 0; padding: 0; height: 100%; background: #000; overflow: hidden; }
+      html, body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        background: #000;
+        overflow: hidden;
+      }
       canvas { display: block; }
+
+      /* Minimal HUD overlay */
+      #hud {
+        position: fixed;
+        bottom: 12px;
+        left: 16px;
+        color: rgba(255,255,255,0.35);
+        font: 11px/1.6 monospace;
+        pointer-events: none;
+        user-select: none;
+      }
     </style>
   </head>
   <body>
+    <!-- Utility & preprocessing libraries -->
     <script src="scripts/math-utils.js"></script>
     <script src="scripts/glsl-preprocess.js"></script>
+
+    <!-- Bridge & helpers -->
     <script src="scripts/js5-bridge.js"></script>
+    <script src="scripts/camera-control.js"></script>
+    <script src="scripts/audio-bridge.js"></script>
+    <script src="scripts/vibe-engine.js"></script>
+
+    <!-- Main sketch -->
     <script src="sketch.js"></script>
+
+    <!-- HUD -->
+    <div id="hud">
+      drag to orbit &nbsp;|&nbsp; scroll to zoom &nbsp;|&nbsp; press [M] to toggle mic &nbsp;|&nbsp; [Space] for new vibe
+    </div>
   </body>
 </html>

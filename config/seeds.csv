@@ -1,0 +1,9 @@
+seed_name,complexity,fractal_type,palette_id,manifold_mode
+"Neon_Gutter",0.85,"none",2,"tiled"
+"Liquid_Zen",0.30,"none",1,"twisted"
+"Menger_Hell",0.95,"menger",3,"mirrored"
+"Biolume_Forest",0.50,"none",1,"infinite"
+"Void_Mandelbulb",0.90,"mandelbulb",4,"tiled"
+"Arctic_Fractal",0.70,"sierpinski",4,"mirrored"
+"Lava_Melt",0.60,"none",5,"twisted"
+"Crystal_Caves",0.75,"none",6,"infinite"

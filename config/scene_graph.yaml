@@ -1,0 +1,46 @@
+version: 1.0
+active_scene: "Neon_Gutter"
+
+globals:
+  max_steps: 120
+  surface_dist: 0.0005
+  max_dist: 80.0
+  ambient_occlusion: true
+  soft_shadows: true
+  shadow_hardness: 16.0
+  fog_density: 0.04
+
+objects:
+  - id: "core_blob"
+    type: "smooth_blend"
+    primitives:
+      - { shape: "sphere", radius: 0.9 }
+      - { shape: "box",    half_extents: [0.7, 0.7, 0.7] }
+    k_factor: 0.45
+    material_id: 1
+    transform:
+      twist_y: true
+      twist_speed: 0.4
+
+  - id: "orbit_torus"
+    type: "torus"
+    major_radius: 0.55
+    tube_radius: 0.18
+    material_id: 2
+    transform:
+      orbit_radius: 2.2
+      orbit_speed: 0.5
+
+  - id: "accent_grid"
+    type: "repeat"
+    primitive:
+      shape: "sphere"
+      radius: 0.25
+    period: 3.5
+    material_id: 3
+
+  - id: "ground"
+    type: "plane"
+    normal: [0, 1, 0]
+    offset: -1.5
+    material_id: 0

@@ -1,0 +1,9 @@
+id,name,base_color,roughness,emission,metallic
+0,Ground_Stone,#2a2520,0.85,0.0,0.0
+1,Bio_Lichen,#44ff88,0.75,0.2,0.0
+2,Chrome_Void,#ffffff,0.05,0.0,0.95
+3,Sunset_Glass,#ff8844,0.3,0.1,0.2
+4,Obsidian,#111118,0.1,0.0,0.4
+5,Lava_Core,#ff3300,0.9,1.5,0.0
+6,Ice_Crystal,#aaddff,0.05,0.05,0.1
+7,Void_Matte,#0a0a12,1.0,0.0,0.0
