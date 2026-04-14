@@ -1,0 +1,24 @@
+{
+  "description": "Ray marching + SDF shader library for RepoScripter2 generative art context",
+  "files": [
+    "README.md",
+    "docs/vibecoding-manual.md",
+    "glsl/marcher.frag",
+    "glsl/primitives.glsl",
+    "glsl/operations.glsl",
+    "glsl/fractals.glsl",
+    "glsl/noise.glsl",
+    "glsl/lighting.glsl",
+    "glsl/manifolds.glsl",
+    "glsl/volumetrics.glsl",
+    "glsl/texturing.glsl",
+    "glsl/dithering.glsl",
+    "glsl/base.vert",
+    "config/palettes.json",
+    "config/materials.csv",
+    "config/environments.yaml",
+    "scripts/js5-bridge.js",
+    "scripts/vibe-engine.js",
+    "scripts/math-utils.js"
+  ]
+}
